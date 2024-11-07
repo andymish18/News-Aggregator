@@ -1,0 +1,115 @@
+/* General layout for the component container */
+:host {
+  display: block;
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Loading message styling */
+.isLoading {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Search results container */
+.search-results {
+  margin-top: 20px;
+}
+
+.search-results h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+li h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #333;
+}
+
+li p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* No results message styling */
+.no-results-message {
+  color: #ff0000;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Error message styling */
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Style for the heading */
+h1 {
+  font-family: 'Arial', sans-serif; /* Change to your preferred font */
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style for the search input */
+input[type="text"] {
+  width: 300px; /* Makes the search bar wider */
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style for the search button */
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darkens button on hover */
+}

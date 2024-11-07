@@ -1,0 +1,160 @@
+/* General Layout and Styling */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  /*background: linear-gradient(135deg, #1d1f21, #383b3d);*/
+  color: #f0f0f0;
+}
+
+/* Header styling */
+app-header {
+  /*background: rgba(18, 20, 22, 0.95); /* Solid background to remove blur */
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+app-header h1 {
+  font-size: 36px;
+  color: #ff9f1c;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Lobster', cursive;
+  text-transform: uppercase;
+}
+
+/* Search bar and button styling */
+app-header input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-top: 10px; /* Lower the search bar slightly */
+  transition: box-shadow 0.3s;
+  font-size: 16px;
+}
+
+app-header input[type="text"]:focus {
+  box-shadow: 0 0 8px rgba(255, 159, 28, 0.7);
+}
+
+app-header button {
+  background-color: #ff9f1c;
+  color: #121416;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px; /* Align with the search bar */
+  transition: background-color 0.3s;
+}
+
+app-header button:hover {
+  background-color: #e88c00;
+}
+
+/* Center the dropdowns and adjust spacing */
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between dropdowns */
+  margin-top: 20px; /* Position below the search bar */
+}
+
+.dropdown-container select {
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #2180bf;
+  color: #f0f0f0;
+  border: 1px solid #ff9f1c;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-container select:hover {
+  background-color: #383b3d;
+  cursor: pointer;
+}
+
+/* Content Area Styling */
+app-news-feed {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+app-news-feed h2 {
+  font-size: 30px;
+  margin: 20px 0;
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+app-news-feed ul {
+  width: 100%;
+  max-width: 800px;
+  padding: 0;
+  list-style: none;
+}
+
+app-news-feed li {
+  background: #2b2e30;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+app-news-feed li:hover {
+  transform: translateY(-5px);
+}
+
+app-news-feed h3 {
+  font-size: 24px;
+  color: #ff9f1c;
+  margin: 0;
+}
+
+app-news-feed p {
+  font-size: 16px;
+  color: #dcdcdc;
+}
+
+app-news-feed a {
+  color: #ff9f1c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+app-news-feed a:hover {
+  color: #e88c00;
+}
+
+/* Footer styling */
+app-footer {
+  background: #121416;
+  color: #9c9c9c;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #383b3d;
+}
+
+app-footer p {
+  margin: 5px 0;
+}
